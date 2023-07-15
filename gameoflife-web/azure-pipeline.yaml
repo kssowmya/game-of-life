@@ -20,3 +20,4 @@ jobs:
         inputs:
           Contents: "**/target/gameoflife.war"
           TargetFolder: $(Build.ArtifactStagingDirectory)
+      
