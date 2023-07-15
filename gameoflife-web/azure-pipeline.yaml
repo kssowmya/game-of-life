@@ -16,3 +16,7 @@ jobs:
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
           javaHomeOption: 'JDKVersion'
           jdkVersionOption: '1.8'
+      - task: CopyFiles@2
+        inputs:
+          Contents: "**/target/gameoflife.war"
+          TargetFolder: $(Build.ArtifactStagingDirectory)
